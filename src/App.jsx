@@ -1,9 +1,17 @@
+import AOS from 'aos';
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 import { BrowserRouter, Outlet, Routes, Route } from 'react-router-dom';
-import About from './About';
+import About from './Pages/About';
+import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
-import Home from './Home';
-
+import Home from './Pages/Home';
 function App() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <>
       <BrowserRouter>
@@ -13,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );

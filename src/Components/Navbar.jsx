@@ -27,13 +27,14 @@ const Navbar = () => {
         <>
             <nav className="bg-[#121212] dark:bg-slate-200 text-white dark:text-black w-full pt-12  transition-all duration-200 px-5 md:px-20">
                 <div className="flex justify-between text-xl ">
-                    <div className="flex hover:text-red-500 cursor-pointer">
+                    <NavLink to="/"><div className="flex hover:text-red-500 cursor-pointer">
                         <img src="/img/me.jpg" alt="" className="rounded-full w-14 mr-3 h-14 object-cover" />
                         <div>
                             <h1 className="font-semibold text-1xl">Jose Díaz</h1>
                             <p className="text-sm text-gray-400">Dev</p>
                         </div>
                     </div>
+                    </NavLink>
                     <div className="hidden gap-10 self-end md:flex">
                         <NavLink to="/" className={location.pathname === "/" ? "underline underline-offset-2 decoration-red-800 decoration-4 transition-colors " : "group transition-all ease-in-out"}><h1 className=" bg-left-bottom bg-gradient-to-r from-gray-600 to-red-from-gray-600 bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:200%_4px] transition-all duration-300 ease-in text-lg"><span className="font-semibold font-mono">01</span> Home</h1></NavLink>
 
@@ -44,30 +45,29 @@ const Navbar = () => {
 
                         {
                             Icon
-                            ?
-                            <span className="hidden md:block rounded-full bg-slate-700 p-2 cursor-pointer hover:bg-slate-600 w-auto h-10 dark:bg-slate-300 hover:origin-center hover:-rotate-12 transition-all duration-200"><HiMoon size={24} onClick={function() {toggleTheme(); toggleIcon() }} /></span>
-                            :
-                            <span className="hidden md:block rounded-full bg-slate-700 p-2 cursor-pointer w-auto h-10 dark:bg-slate-300 transition-all duration-200"><HiSun size={24} onClick={function() {toggleTheme(); toggleIcon() }} /></span>
+                                ?
+                                <span className="hidden md:block rounded-full bg-slate-700 p-2 cursor-pointer hover:bg-slate-600 w-auto h-10 dark:bg-slate-300 hover:origin-center hover:-rotate-12 transition-all duration-200"><HiMoon size={24} onClick={function () { toggleTheme(); toggleIcon() }} /></span>
+                                :
+                                <span className="hidden md:block rounded-full bg-slate-700 p-2 cursor-pointer w-auto h-10 dark:bg-slate-300 transition-all duration-200"><HiSun size={24} onClick={function () { toggleTheme(); toggleIcon() }} /></span>
                         }
-                        
+
                     </div>
                     <div className="flex gap-4 justify-end md:hidden">
 
-                    <span className="block rounded-full bg-slate-700 p-2 cursor-pointer hover:bg-slate-600 w-auto h-10  dark:bg-slate-300"><HiMoon size={24} onClick={toggleTheme} /></span>
-                    <MdMenu size={38} onClick={() => setNavbar(!navbar)} className="transition-all duration-500 md:hidden rounded-full bg-slate-600 p-2 cursor-pointer dark:bg-slate-300" />
-                     </div>
+                        <span className="block rounded-full bg-slate-700 p-2 cursor-pointer hover:bg-slate-600 w-auto h-10  dark:bg-slate-300"><HiMoon size={24} onClick={toggleTheme} /></span>
+                        <MdMenu size={38} onClick={() => setNavbar(!navbar)} className="transition-all duration-500 md:hidden rounded-full bg-slate-600 p-2 cursor-pointer dark:bg-slate-300" />
+                    </div>
                     {
                         navbar
                             ?
                             <div className="h-screen w-full top-0 left-0 z-20 bg-black fixed  transition-all duration-500 animate-in slide-in-from-top md:hidden">
                                 <MdClose size={38} className="absolute right-0 m-2" onClick={() => setNavbar(!navbar)} />
                                 <div className="pt-28 pl-20">
-                                    <NavLink to="/" onClick={() => setTimeout(() => setNavbar(!navbar), 200) }><h1 className={location.pathname === "/" ? "underline underline-offset-2 decoration-red-800 decoration-8 transition-colors font-serif text-6xl" : "group transition-all ease-in-out font-serif text-6xl"}><span className="bold font-sans text-slate-500 text-2xl">01</span> Home</h1></NavLink>
+                                    <NavLink to="/" onClick={() => setTimeout(() => setNavbar(!navbar), 200)}><h1 className={location.pathname === "/" ? "underline underline-offset-2 decoration-red-800 decoration-8 transition-colors font-serif text-6xl" : "group transition-all ease-in-out font-serif text-6xl"}><span className="bold font-sans text-slate-500 text-2xl">01</span> Home</h1></NavLink>
 
-                                    <NavLink to="/about" onClick={() =>  setTimeout(() => setNavbar(!navbar), 200) }><h1 className={location.pathname === "/about" ? "underline underline-offset-2 decoration-red-800 decoration-8 transition-colors font-serif text-6xl mt-10" : "group transition-all ease-in-out font-serif text-6xl mt-10"}><span className="bold font-sans text-slate-500 text-2xl">02</span> About</h1></NavLink>
+                                    <NavLink to="/about" onClick={() => setTimeout(() => setNavbar(!navbar), 200)}><h1 className={location.pathname === "/about" ? "underline underline-offset-2 decoration-red-800 decoration-8 transition-colors font-serif text-6xl mt-10" : "group transition-all ease-in-out font-serif text-6xl mt-10"}><span className="bold font-sans text-slate-500 text-2xl">02</span> About</h1></NavLink>
 
-                                    <NavLink to="/about" onClick={() =>  setTimeout(() => setNavbar(!navbar), 200) }><h1 className={location.pathname === "/blog" ? "underline underline-offset-2 decoration-red-800 decoration-8 transition-colors font-serif text-6xl mt-10" : "group transition-all ease-in-out font-serif text-6xl mt-10"}><span className="bold font-sans text-slate-500 text-2xl">03</span> Blog</h1></NavLink>
-
+                                    <NavLink to="/about" onClick={() => setTimeout(() => setNavbar(!navbar), 200)}><h1 className={location.pathname === "/blog" ? "underline underline-offset-2 decoration-red-800 decoration-8 transition-colors font-serif text-6xl mt-10" : "group transition-all ease-in-out font-serif text-6xl mt-10"}><span className="bold font-sans text-slate-500 text-2xl">03</span> Blog</h1></NavLink>
                                 </div>
                             </div>
                             :
