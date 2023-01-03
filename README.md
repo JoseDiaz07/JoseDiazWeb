@@ -1,4 +1,4 @@
 # Welcome to my web 
 
-## visit
-https://josediazweb.netlify.app/
+## Visit
+- https://josediazweb.netlify.app/
