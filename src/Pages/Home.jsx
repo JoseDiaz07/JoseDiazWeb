@@ -35,7 +35,7 @@ const Home = () => {
 
             <div className="pb-20 pt-12 px-4 md:pt-24 md:px-16">
                 <div>
-                    <h1 className="text-2xl md:text-6xl text-white dark:text-black font-serif pt-2">Portfolio</h1>
+                    <h1 className="text-2xl md:text-5xl text-white dark:text-black font-serif pt-2">Portfolio</h1>
                     <div className="flex justify-start mt-10">
                         <div className="bg-[#28292a] w-72 h-auto p-6 rounded-2xl dark:bg-white dark:text-black dark:shadow-lg"data-aos="fade-down" data-aos-duration="600" data-aos-once="true">
                             <img src="/img/knowty.png" alt="" className="object-contain w-64 rounded-md hover:scale-105 transition-all duration-200 mx-auto" />
