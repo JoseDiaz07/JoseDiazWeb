@@ -15,7 +15,7 @@ const Footer = () => {
           <a href="https://www.instagram.com/josediaz078/" target="_blank" rel="noreferrer" className="hover:text-slate-500 dark:hover:text-slate-800"><RiInstagramFill size={32} /></a>
         </div>
 
-        <h3 className="text-lg font-normal mt-3">© 2022 Jose Díaz</h3>
+        <h3 className="text-lg font-normal mt-10">© 2022 Jose Díaz</h3>
       </div>
     </footer>
   )
