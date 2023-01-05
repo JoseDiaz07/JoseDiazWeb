@@ -6,6 +6,7 @@ import About from './Pages/About';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
+
 function App() {
   useEffect(() => {
     AOS.init();
