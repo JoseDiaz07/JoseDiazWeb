@@ -26,9 +26,9 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="bg-[#121212] dark:bg-slate-100 text-white dark:text-black w-full pt-5 md:pt-12  transition-all duration-200 px-5 md:px-20">
+            <nav className="bg-[#121212] dark:bg-slate-100 text-white dark:text-black w-full pt-5 md:pt-12  transition-all duration-500 px-5 md:px-20">
                 <div className="flex justify-between text-xl ">
-                    <NavLink to="/"><div className="flex hover:text-red-500 cursor-pointer">
+                    <NavLink to="/"><div className="flex hover:text-red-500 cursor-pointer transition-colors duration-300">
                         <img src="/img/me-min.jpg" alt="" className="rounded-full w-14 mr-3 h-14 object-cover scale-110" />
                         <div>
                             <h1 className="font-semibold text-1xl">Jose Díaz</h1>
@@ -37,9 +37,9 @@ const Navbar = () => {
                     </div>
                     </NavLink>
                     <div className="hidden gap-10 self-end md:flex pb-1">
-                        <NavLink to="/" className={location.pathname === "/" ? "underline underline-offset-2 decoration-red-800 decoration-4 transition-colors " : "group transition-all ease-in-out"}><h1 className=" bg-left-bottom bg-gradient-to-r from-gray-600 to-red-from-gray-600 bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:200%_4px] transition-all duration-300 ease-in text-lg"><span className="font-semibold font-mono">01</span> Home</h1></NavLink>
+                        <NavLink to="/" className={location.pathname === "/" ? "underline underline-offset-2 decoration-red-800 decoration-4 transition-colors " : "group transition-all ease-in-out"}><h1 className=" bg-left-bottom bg-gradient-to-r from-gray-600 to-red-from-gray-600 bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:200%_4px] transition-all duration-300 ease-in text-xl"><span className="font-semibold font-mono">01</span> Home</h1></NavLink>
 
-                        <NavLink to="/about" className={location.pathname === "/about" ? "underline underline-offset-2 decoration-red-800 decoration-4 transition-colors " : "group transition-all ease-in-out"}><h1 className=" bg-left-bottom bg-gradient-to-r from-gray-600 to-red-from-gray-600 bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:200%_4px] transition-all duration-300 ease-in text-lg"><span className="font-bold font-mono">02</span> About</h1>
+                        <NavLink to="/about" className={location.pathname === "/about" ? "underline underline-offset-2 decoration-red-800 decoration-4 transition-colors " : "group transition-all ease-in-out"}><h1 className=" bg-left-bottom bg-gradient-to-r from-gray-600 to-red-from-gray-600 bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:200%_4px] transition-all duration-300 ease-in text-xl"><span className="font-bold font-mono">02</span> About</h1>
                         </NavLink>
 
                         {
