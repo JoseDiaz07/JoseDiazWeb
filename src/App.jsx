@@ -6,6 +6,7 @@ import About from './Pages/About';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
+import NotFound from './Pages/NotFound';
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>

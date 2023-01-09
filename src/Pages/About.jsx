@@ -20,14 +20,13 @@ const About = () => {
           <div className="space-y-4">
             <div className="flex gap-2 md:gap-5">
               <RiInstagramFill size={30} className="text-white dark:text-[#495057]" />
-              <a href="https://www.instagram.com/josediaz078/" className="text-red-400 hover:text-white underline decoration-red-400 underline-offset-4 hover:bg-red-400 text-xl" target="_blank" rel="noreferrer">Instagram</a>
+              <a href="https://www.instagram.com/josediaz078/" className="text-red-400 hover:text-white underline decoration-red-400 underline-offset-8 hover:bg-red-400 text-xl transition-all duration-300" target="_blank" rel="noreferrer">Instagram</a>
             </div>
             <div className="flex gap-2 md:gap-5 mt- ">
               <BsGithub size={30} className="text-white dark:text-[#495057]" />
-              <a href="https://github.com/JoseDiaz07" className="text-red-400 hover:text-white underline decoration-red-400 underline-offset-4 hover:bg-red-400 text-xl" target="_blank" rel="noreferrer">Github</a>
+              <a href="https://github.com/JoseDiaz07" className="text-red-400 hover:text-white underline decoration-red-400 underline-offset-8 hover:bg-red-400 text-xl transition-all duration-300" target="_blank" rel="noreferrer">Github</a>
             </div>
           </div>
-
         </div>
       </div>
     </div >
