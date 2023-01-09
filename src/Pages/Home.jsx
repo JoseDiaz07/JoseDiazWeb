@@ -49,7 +49,7 @@ const Home = () => {
                                 <IoLogoReact size={20} className="text-white dark:text-[#495057]" />
                                 <FaBootstrap size={20} className="text-white dark:text-[#495057]" />
                             </div>
-                            <button className="outline outline-1 hover:bg-black text-white px-10 py-1 rounded-lg mt-5 transition-colors duration-200 "><a href="http://knowtydark.netlify.app/">Visit</a> </button>
+                            <button className="outline outline-1  font-medium  hover:bg-white text-white hover:text-black outline-white dark:outline-black dark:text-black dark:hover:bg-black dark:hover:text-white px-10 py-1 rounded-lg mt-5 transition-colors duration-200 "><a href="http://knowtydark.netlify.app/">Visit</a> </button>
                         </div>
                     </div>
                 </div>

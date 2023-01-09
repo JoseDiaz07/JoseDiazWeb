@@ -2,6 +2,9 @@ import { RiInstagramFill } from "react-icons/ri";
 import { BsGithub } from "react-icons/bs";
 
 const Footer = () => {
+  const date = new Date()
+  const currentYear = date.getFullYear()
+
   return (
     <footer class="text-center md:text-left border-t-2 border-gray-600 dark:border-gray-300">
       <div class="text-white  dark:text-black text-center p-4 bg-[#121212] dark:bg-slate-100  pt-16 ">
@@ -11,11 +14,11 @@ const Footer = () => {
           <h3 className="text-xl md:text-2xl text-center tracking-wide">joseliasdiazm@gmail.com</h3>
         </div>
         <div className="w-72 mx-auto flex rounded-l mt-3 justify-center gap-2">
-          <a href="https://github.com/JoseDiaz07" target="_blank" rel="noreferrer"><BsGithub size={35} className="hover:text-slate-500 dark:hover:text-slate-500 dark:hover:text-slate-800 hover:scale-110"/></a>
-          <a href="https://www.instagram.com/josediaz078/" target="_blank" rel="noreferrer"><RiInstagramFill size={35} className="hover:text-slate-500 dark:hover:text-slate-500 dark:hover:text-slate-800 hover:scale-110"/></a>
+          <a href="https://github.com/JoseDiaz07" target="_blank" rel="noreferrer"><BsGithub size={35} className="hover:text-slate-500 hover:text-slate-400 dark:hover:text-slate-600 hover:scale-110"/></a>
+          <a href="https://www.instagram.com/josediaz078/" target="_blank" rel="noreferrer"><RiInstagramFill size={35} className="hover:text-slate-500 hover:text-slate-400 dark:hover:text-slate-600 hover:scale-110"/></a>
         </div>
 
-        <h3 className="text-lg font-normal mt-10">© 2022 Jose Díaz</h3>
+        <h3 className="text-lg font-normal mt-10">© 2022 - {currentYear} Jose Díaz</h3>
       </div>
     </footer>
   )
