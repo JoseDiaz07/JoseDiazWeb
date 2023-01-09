@@ -37,9 +37,9 @@ const Navbar = () => {
                     </div>
                     </NavLink>
                     <div className="hidden gap-10 self-end md:flex pb-1">
-                        <NavLink to="/" className={location.pathname === "/" ? "underline underline-offset-2 decoration-red-800 decoration-4 transition-colors " : "group transition-all ease-in-out"}><h1 className=" bg-left-bottom bg-gradient-to-r from-gray-600 to-red-from-gray-600 bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:200%_4px] transition-all duration-300 ease-in text-xl"><span className="font-semibold font-mono">01</span> Home</h1></NavLink>
+                        <NavLink to="/" className={location.pathname === "/" ? "underline underline-offset-4 decoration-red-800 decoration-4 transition-colors " : "group transition-all ease-in-out"}><h1 className=" bg-left-bottom bg-gradient-to-r from-gray-600 to-gray-600 bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:200%_3px] transition-all duration-300 ease-in text-xl"><span className="font-semibold font-mono">01</span> Home</h1></NavLink>
 
-                        <NavLink to="/about" className={location.pathname === "/about" ? "underline underline-offset-2 decoration-red-800 decoration-4 transition-colors " : "group transition-all ease-in-out"}><h1 className=" bg-left-bottom bg-gradient-to-r from-gray-600 to-red-from-gray-600 bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:200%_4px] transition-all duration-300 ease-in text-xl"><span className="font-bold font-mono">02</span> About</h1>
+                        <NavLink to="/about" className={location.pathname === "/about" ? "underline underline-offset-4 decoration-red-800 decoration-4 transition-colors " : "group transition-all ease-in-out"}><h1 className=" bg-left-bottom bg-gradient-to-r from-gray-600 to-gray-600 bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:200%_3px] transition-all duration-300 ease-in text-xl"><span className="font-bold font-mono">02</span> About</h1>
                         </NavLink>
 
                         {
@@ -70,7 +70,6 @@ const Navbar = () => {
                                     <NavLink to="/" onClick={() => setTimeout(() => setNavbar(!navbar), 200)}><h1 className={location.pathname === "/" ? "underline underline-offset-2 decoration-red-800 decoration-8 transition-colors font-serif text-6xl  bg-none" : "group transition-all ease-in-out font-serif text-6xl"}><span className="bold font-sans text-slate-500 text-2xl">01</span> Home</h1></NavLink>
 
                                     <NavLink to="/about" onClick={() => setTimeout(() => setNavbar(!navbar), 200)}><h1 className={location.pathname === "/about" ? "underline underline-offset-2 decoration-red-800 decoration-8 transition-colors font-serif text-6xl mt-10" : "group transition-all ease-in-out font-serif text-6xl mt-10"}><span className="bold font-sans text-slate-500 text-2xl">02</span> About</h1></NavLink>
-
                                 </div>
                             </div>
                             :
