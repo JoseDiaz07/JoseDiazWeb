@@ -6,6 +6,7 @@ import { IoLogoNodejs } from "react-icons/io";
 import { IoLogoReact } from "react-icons/io5";
 import { FaBootstrap } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
+import Tooltip from "../Components/Tooltip";
 
 const Home = () => {
     return (
@@ -22,13 +23,20 @@ const Home = () => {
                     <p className="text-lg md:text-xl text-white dark:text-black text-center font-light mt-2 w-full md:w-[24em] mx-auto">I am currently proficient in these technologies. To add that I am learning React and  Tailwind CSS</p>
 
                     <div className="flex gap-3 md:gap-20 justify-center mt-6 md:mt-4">
-                        <AiFillHtml5 size={38} className="text-white dark:text-[#495057]" />
-                        <DiCss3 size={38} className="text-white dark:text-[#495057]" />
-                        <IoLogoJavascript size={38} className="text-white dark:text-[#495057]" />
-                        <IoLogoNodejs size={38} className="text-white dark:text-[#495057]" />
-                        <IoLogoReact size={38} className="text-white dark:text-[#495057]" />
-                        <FaBootstrap size={38} className="text-white dark:text-[#495057]" />
-                        <SiTailwindcss size={38} className="text-white dark:text-[#495057]" />
+{/*                         <div className="group flex relative">
+                            <AiFillHtml5 size={38} className="text-white dark:text-[#495057]" />
+                            <span class="group-hover:opacity-100 transition-opacity bg-gray-900 px-2 text-xs text-gray-100 rounded-md absolute left-1/2 top-2 
+    -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">HTML</span>
+                        </div> */}
+                        <Tooltip icon={<AiFillHtml5 size={38} className="text-white dark:text-[#495057]" />} text="HTML"/>
+                        <Tooltip icon={<DiCss3 size={38} className="text-white dark:text-[#495057]" />} text="CSS"/>
+                        <Tooltip icon={<IoLogoJavascript size={38} className="text-white dark:text-[#495057]" />} text="Javascript"/>
+                        <Tooltip icon={<IoLogoNodejs size={38} className="text-white dark:text-[#495057]" />} text="Node"/>
+                        <Tooltip icon={<IoLogoReact size={38} className="text-white dark:text-[#495057]" />} text="React"/>
+                        <Tooltip icon={<FaBootstrap size={38} className="text-white dark:text-[#495057]" />} text="Bootstrap"/>
+                        <Tooltip icon={<SiTailwindcss size={38} className="text-white dark:text-[#495057]" />} text="Tailwind"/>
+
+
                     </div>
                 </div>
             </div>

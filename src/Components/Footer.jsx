@@ -2,8 +2,6 @@ import { RiInstagramFill } from "react-icons/ri";
 import { BsGithub } from "react-icons/bs";
 
 const Footer = () => {
-  const date = new Date()
-  const currentYear = date.getFullYear()
 
   return (
     <footer class="text-center md:text-left border-t-2 border-gray-600 dark:border-gray-300">
@@ -18,7 +16,6 @@ const Footer = () => {
           <a href="https://www.instagram.com/josediaz078/" target="_blank" rel="noreferrer"><RiInstagramFill size={35} className="hover:text-slate-500 hover:text-slate-400 dark:hover:text-slate-600 hover:scale-110" /></a>
         </div>
 
-        <h3 className="text-lg font-normal mt-10">© 2022 - {currentYear} Jose Díaz</h3>
       </div>
     </footer>
   )
