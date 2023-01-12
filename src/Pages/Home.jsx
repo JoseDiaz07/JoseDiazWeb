@@ -37,7 +37,7 @@ const Home = () => {
 
             <div className="pb-20 pt-12 px-4 md:pt-24 md:px-16">
                 <div>
-                    <h1 className="text-2xl md:text-5xl text-white dark:text-black font-serif pt-2 tracking-wide">Portfolio</h1>
+                    <h1 className="text-5xl text-white dark:text-black font-serif pt-2 tracking-wide">Portfolio</h1>
                     <div className="flex justify-start mt-10">
                         <PortfolioCard title="Knowty" img="knowty.png" description="An educational page for tenth grade students.  Created with the purpose of help students in their academic process." link="http://knowtydark.netlify.app/" technologies={
                             <>
