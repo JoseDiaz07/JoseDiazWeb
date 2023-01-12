@@ -67,9 +67,9 @@ const Navbar = () => {
                             <div className="h-screen w-full top-0 left-0 z-20 bg-[#121212] dark:bg-white fixed  transition-all duration-500 md:hidden" data-aos="fade-down" data-aos-duration="600">
                                 <MdClose size={38} className="absolute right-0 m-4 bg-slate-600 cursor-pointer p-1 dark:bg-slate-300 rounded-full scale-125" onClick={() => setNavbar(!navbar)} />
                                 <div className="pt-44 pl-20">
-                                    <NavLink to="/" onClick={() => setTimeout(() => setNavbar(!navbar), 200)}><h1 className={location.pathname === "/" ? "underline underline-offset-2 decoration-red-800 decoration-8 transition-colors font-serif text-6xl  bg-none" : "group transition-all ease-in-out font-serif text-6xl"}><span className="bold font-sans text-slate-500 text-2xl">01</span> Home</h1></NavLink>
+                                    <NavLink to="/" onClick={() => setTimeout(() => setNavbar(!navbar), 200)}><h1 className={location.pathname === "/" ? "underline underline-offset-2 decoration-red-800 decoration-8 transition-colors font-serif text-6xl  bg-none" : "group transition-all ease-in-out font-serif text-6xl"}><span className="bold font-mono text-slate-500 text-2xl">01</span> Home</h1></NavLink>
 
-                                    <NavLink to="/about" onClick={() => setTimeout(() => setNavbar(!navbar), 200)}><h1 className={location.pathname === "/about" ? "underline underline-offset-2 decoration-red-800 decoration-8 transition-colors font-serif text-6xl mt-10" : "group transition-all ease-in-out font-serif text-6xl mt-10"}><span className="bold font-sans text-slate-500 text-2xl">02</span> About</h1></NavLink>
+                                    <NavLink to="/about" onClick={() => setTimeout(() => setNavbar(!navbar), 200)}><h1 className={location.pathname === "/about" ? "underline underline-offset-2 decoration-red-800 decoration-8 transition-colors font-serif text-6xl mt-10" : "group transition-all ease-in-out font-serif text-6xl mt-10"}><span className="bold font-mono text-slate-500 text-2xl">02</span> About</h1></NavLink>
                                 </div>
                             </div>
                             :
