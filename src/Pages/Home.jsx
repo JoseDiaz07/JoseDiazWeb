@@ -24,32 +24,30 @@ const Home = () => {
                     <p className="text-lg md:text-xl text-white dark:text-black text-center font-light mt-2 w-full md:w-[24em] mx-auto">I am currently proficient in these technologies. To add that I am learning React and  Tailwind CSS</p>
 
                     <div className="flex gap-3 md:gap-20 justify-center mt-6 md:mt-4">
-                        <Tooltip icon={<AiFillHtml5 size={38} className="text-white dark:text-[#495057]" />} text="HTML" />
-                        <Tooltip icon={<DiCss3 size={38} className="text-white dark:text-[#495057]" />} text="CSS" />
-                        <Tooltip icon={<IoLogoJavascript size={38} className="text-white dark:text-[#495057]" />} text="Javascript" />
-                        <Tooltip icon={<IoLogoNodejs size={38} className="text-white dark:text-[#495057]" />} text="Node" />
-                        <Tooltip icon={<IoLogoReact size={38} className="text-white dark:text-[#495057]" />} text="React" />
-                        <Tooltip icon={<FaBootstrap size={38} className="text-white dark:text-[#495057]" />} text="Bootstrap" />
-                        <Tooltip icon={<SiTailwindcss size={38} className="text-white dark:text-[#495057]" />} text="Tailwind" />
+                        <Tooltip icon={<AiFillHtml5 size={38} className="text-white dark:text-[#495057] hover:text-gray-400 dark:hover:text-gray-500 transition-all duration-200" />} text="HTML" />
+                        <Tooltip icon={<DiCss3 size={38} className="text-white dark:text-[#495057] hover:text-gray-400 dark:hover:text-gray-500 transition-all duration-200" />} text="CSS" />
+                        <Tooltip icon={<IoLogoJavascript size={38} className="text-white dark:text-[#495057] hover:text-gray-400 dark:hover:text-gray-500 transition-all duration-200" />} text="Javascript" />
+                        <Tooltip icon={<IoLogoNodejs size={38} className="text-white dark:text-[#495057] hover:text-gray-400 dark:hover:text-gray-500 transition-all duration-200" />} text="Node" />
+                        <Tooltip icon={<IoLogoReact size={38} className="text-white dark:text-[#495057] hover:text-gray-400 dark:hover:text-gray-500 transition-all duration-200" />} text="React" />
+                        <Tooltip icon={<FaBootstrap size={38} className="text-white dark:text-[#495057] hover:text-gray-400 dark:hover:text-gray-500 transition-all duration-200" />} text="Bootstrap" />
+                        <Tooltip icon={<SiTailwindcss size={38} className="text-white dark:text-[#495057] hover:text-gray-400 dark:hover:text-gray-500 transition-all duration-200" />} text="Tailwind" />
                     </div>
                 </div>
             </div>
 
             <div className="pb-20 pt-12 px-4 md:pt-24 md:px-16">
-                <div>
-                    <h1 className="text-5xl text-white dark:text-black font-serif pt-2 tracking-wide">Portfolio</h1>
-                    <div className="flex justify-start mt-10">
-                        <PortfolioCard title="Knowty" img="knowty.png" description="An educational page for tenth grade students.  Created with the purpose of help students in their academic process." link="http://knowtydark.netlify.app/" technologies={
-                            <>
-                                <AiFillHtml5 size={20} className="text-white dark:text-[#495057]" />
-                                <DiCss3 size={20} className="text-white dark:text-[#495057]" />
-                                <IoLogoJavascript size={20} className="text-white dark:text-[#495057]" />
-                                <IoLogoReact size={20} className="text-white dark:text-[#495057]" />
-                                <FaBootstrap size={20} className="text-white dark:text-[#495057]" />
-                            </>}
-                        />
-                        
-                    </div>
+                <h1 className="text-5xl text-white dark:text-black font-serif pt-2 tracking-wide">Portfolio</h1>
+                <div className="flex justify-start mt-10">
+                    <PortfolioCard title="Knowty" img="knowty.png" description="An educational page for tenth grade students.  Created with the purpose of help students in their academic process." link="http://knowtyone.netlify.app/" technologies={
+                        <>
+                            <AiFillHtml5 size={20} className="text-white dark:text-[#495057]" />
+                            <DiCss3 size={20} className="text-white dark:text-[#495057]" />
+                            <IoLogoJavascript size={20} className="text-white dark:text-[#495057]" />
+                            <IoLogoReact size={20} className="text-white dark:text-[#495057]" />
+                            <FaBootstrap size={20} className="text-white dark:text-[#495057]" />
+                        </>}
+                    />
+
                 </div>
             </div>
         </div>
