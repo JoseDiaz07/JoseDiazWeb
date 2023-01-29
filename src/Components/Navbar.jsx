@@ -36,10 +36,19 @@ const Navbar = () => {
                         </div>
                     </div>
                     </NavLink>
-                    <div className="hidden gap-10 self-end md:flex pb-1">
-                        <NavLink to="/" className={location.pathname === "/" ? "underline underline-offset-4 decoration-red-800 decoration-4 transition-colors " : "group transition-all ease-in-out"}><h1 className=" bg-left-bottom bg-gradient-to-r from-gray-600 to-gray-600 bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:200%_3px] transition-all duration-300 ease-in text-xl"><span className="font-semibold font-mono">01</span> Home</h1></NavLink>
+                    <div className="hidden gap-x-10 self-end md:flex pb-1">
+                        <NavLink to="/" className={location.pathname === "/" ? "h-8" : "text-gray-500 nav"}>
+                            <h1 className="mt-0.5"><span className="font-semibold font-mono">01</span> Home</h1>
+                            {
+                                location.pathname === "/" && <div className=" bg-red-800 h-[3px] w-[100%] left-0 -bottom-[5px] rounded-lg  relative"></div>
+                            }
+                        </NavLink>
 
-                        <NavLink to="/about" className={location.pathname === "/about" ? "underline underline-offset-4 decoration-red-800 decoration-4 transition-colors " : "group transition-all ease-in-out"}><h1 className=" bg-left-bottom bg-gradient-to-r from-gray-600 to-gray-600 bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:200%_3px] transition-all duration-300 ease-in text-xl"><span className="font-bold font-mono">02</span> About</h1>
+                        <NavLink to="/about" className={location.pathname === "/about" ? " h-8" : "text-gray-500 nav"}>
+                            <h1 className="mt-0.5"><span className="font-semibold font-mono">02</span> About</h1>
+                            {
+                                location.pathname === "/about" && <div className=" bg-red-800 h-[3px] w-[100%] left-0 -bottom-[5px] rounded-lg  relative"></div>
+                            }
                         </NavLink>
 
                         {
@@ -55,7 +64,7 @@ const Navbar = () => {
                         {
                             Icon
                                 ?
-                                <span className="block md:hidden rounded-full bg-slate-600 p-2 cursor-pointer hover:bg-slate-500 w-auto h-10 dark:bg-slate-300 hover:origin-center hover:-rotate-12 transition-all duration-200 scale-125" onClick={function () { toggleTheme(); toggleIcon() }}><HiMoon size={24}  /></span>
+                                <span className="block md:hidden rounded-full bg-slate-600 p-2 cursor-pointer hover:bg-slate-500 w-auto h-10 dark:bg-slate-300 hover:origin-center hover:-rotate-12 transition-all duration-200 scale-125" onClick={function () { toggleTheme(); toggleIcon() }}><HiMoon size={24} /></span>
                                 :
                                 <span className="block md:hidden rounded-full bg-slate-600 p-2 cursor-pointer hover:bg-slate-500 w-auto h-10 dark:bg-slate-300 hover:origin-center hover:-rotate-45 transition-all duration-200 scale-125" onClick={function () { toggleTheme(); toggleIcon() }}><HiSun size={24} /></span>
                         }
@@ -66,10 +75,20 @@ const Navbar = () => {
                             ?
                             <div className="h-screen w-full top-0 left-0 z-20 bg-[#121212] dark:bg-white fixed  transition-all duration-500 md:hidden" transition-style="in:circle:top-right">
                                 <MdClose size={38} className="absolute right-0 m-4 bg-slate-600 cursor-pointer p-1 dark:bg-slate-300 rounded-full scale-125" onClick={() => setNavbar(!navbar)} />
-                                <div className="pt-44 pl-20">
-                                    <NavLink to="/" onClick={() => setTimeout(() => setNavbar(!navbar), 200)}><h1 className={location.pathname === "/" ? "underline underline-offset-2 decoration-red-800 decoration-8 transition-colors font-serif text-6xl  bg-none" : "group transition-all ease-in-out font-serif text-6xl"}><span className="bold font-mono text-slate-500 text-2xl">01</span> Home</h1></NavLink>
+                                <div className="pt-44 pl-20 gap-y-10 flex flex-col">
+                                    <NavLink to="/" onClick={() => setTimeout(() => setNavbar(!navbar), 200)}>
+                                        <h1 className={location.pathname === "/" ? "h-16 text-6xl font-serif" : "text-gray-500 nav text-6xl font-serif"}><span className="bold font-mono text-slate-500 text-2xl">01</span> Home</h1>
+                                        {
+                                            location.pathname === "/" && <div className="bg-red-800 h-[3px] w-[75%] left-0 -bottom-[5px] rounded-lg  relative"></div>
+                                        }
+                                    </NavLink>
 
-                                    <NavLink to="/about" onClick={() => setTimeout(() => setNavbar(!navbar), 200)}><h1 className={location.pathname === "/about" ? "underline underline-offset-2 decoration-red-800 decoration-8 transition-colors font-serif text-6xl mt-10" : "group transition-all ease-in-out font-serif text-6xl mt-10"}><span className="bold font-mono text-slate-500 text-2xl">02</span> About</h1></NavLink>
+                                    <NavLink to="/about" onClick={() => setTimeout(() => setNavbar(!navbar), 200)}>
+                                        <h1 className={location.pathname === "/about" ? "h-16 text-6xl font-serif " : "text-gray-500 nav text-6xl font-serif "}><span className="bold font-mono text-slate-500 text-2xl">02</span> About</h1>
+                                        {
+                                            location.pathname === "/about" && <div className=" bg-red-800 h-[3px] w-[75%] left-0 -bottom-[5px] rounded-lg  relative"></div>
+                                        }
+                                    </NavLink>
                                 </div>
                             </div>
                             :

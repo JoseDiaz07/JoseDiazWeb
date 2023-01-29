@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 @import "transition-style";
+
+.nav {
+  @apply relative hover:text-white h-[2.2rem];
+}
+
+.nav::after {
+  @apply content-[""] bg-red-800 h-[3px] w-[0%] left-0 -bottom-[5px] rounded-lg absolute duration-300;
+}
+
+.nav:hover::after {
+  @apply w-[100%];
+}
