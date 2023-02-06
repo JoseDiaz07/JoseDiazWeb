@@ -20,9 +20,7 @@ const Navbar = () => {
 
     const [Icon, setIcon] = useState(false)
 
-    const toggleIcon = () => {
-        setIcon(!Icon)
-    }
+    const toggleIcon = () => theme === 'dark' ? setIcon(false) : setIcon(true)
 
     return (
         <>

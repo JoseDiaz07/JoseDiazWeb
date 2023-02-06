@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <div className="px-1 bg-[#121212] transition-all duration-500 dark:bg-slate-100 min-h-screen">
             <div className="pt-12 px-4 md:pt-28 md:px-16 transition-all duration-500">
-                <Link to="/about"><h3 className="text-red-500 font-semibold font-sans text-lg md:text-2xl hover:text-red-700 transition-all duration-300" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">HELLO WORLD, I AM JOSE DIAZ</h3></Link>
+                <Link to="/about"><h3 className="text-red-500 font-semibold font-sans text-lg md:text-2xl hover:text-red-700 transition-all duration-300 md:w-96" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">HELLO WORLD, I AM JOSE DIAZ</h3></Link>
                 <h1 className="text-4xl md:text-8xl text-white dark:text-black font-serif pt-2 pb-6 " data-aos="fade-right" data-aos-duration="800" data-aos-once="true">Code and websites.</h1>
                 <h5 className="text-2xl  md:text-3xl  text-white dark:text-black font-sans font-light" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">A front-end developer and creator of <a href="http://knowtyone.netlify.app/" className="underline underline-offset-8     decoration-red-400  decoration-solid transition-all duration-200 hover:bg-red-400 hover:text-white tracking-tight" target="_blank" rel="noreferrer">Knowty</a>, an educational page for tenth grade students. <br className="hidden md:block" /> I also like to delve into the psychology of people.   </h5>
             </div>
