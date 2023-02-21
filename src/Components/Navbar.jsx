@@ -29,21 +29,21 @@ const Navbar = () => {
                     <NavLink to="/"><div className="flex hover:text-red-500 cursor-pointer transition-colors duration-300">
                         <img src="/img/me-min.jpg" alt="" className="rounded-full w-14 mr-3 h-14 object-cover scale-110" />
                         <div>
-                            <h1 className="font-semibold text-1xl">Jose Díaz</h1>
+                            <h1 className="font-semibold text-1xl duration-200">Jose Díaz</h1>
                             <p className="text-sm text-gray-400">Dev</p>
                         </div>
                     </div>
                     </NavLink>
                     <div className="hidden gap-x-10 self-end md:flex pb-1">
-                        <NavLink to="/" className={location.pathname === "/" ? "h-8" : "text-gray-500 nav"}>
-                            <h1 className="mt-0.5"><span className="font-semibold font-mono">01</span> Home</h1>
+                        <NavLink to="/" className={location.pathname === "/" ? "h-8 nav" : "text-gray-500 nav"}>
+                            <h1 className="mt-0.5 duration-200"><span className="font-semibold font-mono">01</span> Home</h1>
                             {
                                 location.pathname === "/" && <div className=" bg-red-800 h-[3px] w-[100%] left-0 -bottom-[5px] rounded-lg  relative"></div>
                             }
                         </NavLink>
 
                         <NavLink to="/about" className={location.pathname === "/about" ? " h-8" : "text-gray-500 nav"}>
-                            <h1 className="mt-0.5"><span className="font-semibold font-mono">02</span> About</h1>
+                            <h1 className="mt-0.5 duration-200"><span className="font-semibold font-mono">02</span> About</h1>
                             {
                                 location.pathname === "/about" && <div className=" bg-red-800 h-[3px] w-[100%] left-0 -bottom-[5px] rounded-lg  relative"></div>
                             }
