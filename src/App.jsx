@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 import { BrowserRouter, Outlet, Routes, Route } from 'react-router-dom';
 import AOS from 'aos';
 import "aos/dist/aos.css";
-import {Footer, Navbar} from './Components/';
-import {Home, NotFound, About} from './Pages/';
+import { Footer, Navbar } from './Components/';
+import { Home, NotFound, About } from './Pages/';
 
 function App() {
   useEffect(() => {

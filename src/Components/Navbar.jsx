@@ -7,7 +7,7 @@ import { useToggleTheme } from "../hooks/useToggleTheme";
 export const Navbar = () => {
     const location = useLocation()
     const [navbar, setNavbar] = useState(false);
-    const {theme, toggleTheme} = useToggleTheme()
+    const { theme, toggleTheme } = useToggleTheme()
 
     const [Icon, setIcon] = useState(false)
 
@@ -42,20 +42,18 @@ export const Navbar = () => {
 
                         {
                             Icon
-                                ?
-                                <span className="hidden md:block rounded-full bg-slate-700 p-2 cursor-pointer hover:bg-slate-600 w-auto h-10 dark:bg-slate-300 hover:origin-center hover:-rotate-12 transition-all duration-200 scale-125" onClick={function () { toggleTheme(); toggleIcon() }}><HiMoon size={24} /></span>
-                                :
-                                <span className="hidden md:block rounded-full bg-slate-700 p-2 cursor-pointer w-auto h-10 dark:bg-slate-300  hover:origin-center hover:-rotate-45 transition-all duration-200 scale-125" onClick={function () { toggleTheme(); toggleIcon() }}><HiSun size={24} /></span>
+                                ? <span className="hidden md:block rounded-full bg-slate-700 p-2 cursor-pointer hover:bg-slate-600 w-auto h-10 dark:bg-slate-300 hover:origin-center hover:-rotate-12 transition-all duration-200 scale-125" onClick={function () { toggleTheme(); toggleIcon() }}><HiMoon size={24} /></span>
+                                
+                                : <span className="hidden md:block rounded-full bg-slate-700 p-2 cursor-pointer w-auto h-10 dark:bg-slate-300  hover:origin-center hover:-rotate-45 transition-all duration-200 scale-125" onClick={function () { toggleTheme(); toggleIcon() }}><HiSun size={24} /></span>
                         }
 
                     </div>
                     <div className="flex gap-4 justify-end md:hidden">
                         {
                             Icon
-                                ?
-                                <span className="block md:hidden rounded-full bg-slate-600 p-2 cursor-pointer hover:bg-slate-500 w-auto h-10 dark:bg-slate-300 hover:origin-center hover:-rotate-12 transition-all duration-200 scale-125" onClick={function () { toggleTheme(); toggleIcon() }}><HiMoon size={24} /></span>
-                                :
-                                <span className="block md:hidden rounded-full bg-slate-600 p-2 cursor-pointer hover:bg-slate-500 w-auto h-10 dark:bg-slate-300 hover:origin-center hover:-rotate-45 transition-all duration-200 scale-125" onClick={function () { toggleTheme(); toggleIcon() }}><HiSun size={24} /></span>
+                                ? <span className="block md:hidden rounded-full bg-slate-600 p-2 cursor-pointer hover:bg-slate-500 w-auto h-10 dark:bg-slate-300 hover:origin-center hover:-rotate-12 transition-all duration-200 scale-125" onClick={function () { toggleTheme(); toggleIcon() }}><HiMoon size={24} /></span>
+
+                                : <span className="block md:hidden rounded-full bg-slate-600 p-2 cursor-pointer hover:bg-slate-500 w-auto h-10 dark:bg-slate-300 hover:origin-center hover:-rotate-45 transition-all duration-200 scale-125" onClick={function () { toggleTheme(); toggleIcon() }}><HiSun size={24} /></span>
                         }
                         <MdMenu size={38} onClick={() => setNavbar(!navbar)} className="transition-all duration-500 md:hidden rounded-full bg-slate-600 p-2 cursor-pointer dark:bg-slate-300 scale-125" />
                     </div>
