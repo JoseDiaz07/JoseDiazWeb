@@ -1,22 +1,13 @@
+import { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom"
-import { HiMoon } from "react-icons/hi2";
-import { HiSun } from "react-icons/hi2";
-import { MdMenu } from "react-icons/md";
-import { MdClose } from "react-icons/md";
-import { useEffect, useState } from "react";
+import { HiMoon, HiSun } from "react-icons/hi2";
+import { MdMenu, MdClose } from "react-icons/md";
+import { useToggleTheme } from "../hooks/useToggleTheme";
 
-const Navbar = () => {
+export const Navbar = () => {
     const location = useLocation()
     const [navbar, setNavbar] = useState(false);
-
-    const [theme, setTheme] = useState(localStorage.getItem('theme') || '');
-
-    const toggleTheme = () => theme === '' ? setTheme('dark') : setTheme('')
-
-    useEffect(() => {
-        localStorage.setItem('theme', theme);
-        document.body.className = theme;
-    }, [theme]);
+    const {theme, toggleTheme} = useToggleTheme()
 
     const [Icon, setIcon] = useState(false)
 
@@ -26,10 +17,10 @@ const Navbar = () => {
         <>
             <nav className="bg-[#121212] dark:bg-slate-100 text-white dark:text-black w-full pt-5 md:pt-12  transition-all duration-500 px-5 md:px-20">
                 <div className="flex justify-between text-xl ">
-                    <NavLink to="/"><div className="flex hover:text-red-500 cursor-pointer transition-colors duration-300">
+                    <NavLink to="/"><div className="flex hover:text-red-500 cursor-pointer transition-colors ">
                         <img src="/img/me-min.jpg" alt="" className="rounded-full w-14 mr-3 h-14 object-cover scale-110" />
                         <div>
-                            <h1 className="font-semibold text-1xl duration-200">Jose Díaz</h1>
+                            <h1 className="font-semibold text-1xl duration-100">Jose Díaz</h1>
                             <p className="text-sm text-gray-400">Dev</p>
                         </div>
                     </div>
@@ -45,7 +36,7 @@ const Navbar = () => {
                         <NavLink to="/about" className={location.pathname === "/about" ? " h-8" : "text-gray-500 nav"}>
                             <h1 className="mt-0.5 duration-200"><span className="font-semibold font-mono">02</span> About</h1>
                             {
-                                location.pathname === "/about" && <div className=" bg-red-800 h-[3px] w-[100%] left-0 -bottom-[5px] rounded-lg  relative"></div>
+                                location.pathname === "/about" && <div className="bg-red-800 h-[3px] w-[100%] left-0 -bottom-[5px] rounded-lg  relative"></div>
                             }
                         </NavLink>
 
@@ -97,5 +88,3 @@ const Navbar = () => {
         </>
     )
 }
-
-export default Navbar

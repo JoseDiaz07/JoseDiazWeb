@@ -1,21 +1,20 @@
 import { Link } from "react-router-dom"
+import Tooltip from "../Components/Tooltip";
+import PortfolioCard from "../Components/PortfolioCard";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
-import { IoLogoJavascript } from "react-icons/io";
-import { IoLogoNodejs } from "react-icons/io";
+import { IoLogoJavascript, IoLogoNodejs } from "react-icons/io";
 import { IoLogoReact } from "react-icons/io5";
 import { FaBootstrap } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
-import Tooltip from "../Components/Tooltip";
-import PortfolioCard from "../Components/PortfolioCard";
 
-const Home = () => {
+export const Home = () => {
     return (
         <div className="px-1 bg-[#121212] transition-all duration-500 dark:bg-slate-100 min-h-screen">
             <div className="pt-12 px-4 md:pt-28 md:px-16 transition-all duration-500">
                 <Link to="/about"><h3 className="text-red-500 font-semibold font-sans text-lg md:text-2xl hover:text-red-700 transition-all duration-300 md:w-96" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">HELLO WORLD, I AM JOSE DIAZ</h3></Link>
                 <h1 className="text-4xl md:text-8xl text-white dark:text-black font-serif pt-2 pb-6 " data-aos="fade-right" data-aos-duration="800" data-aos-once="true">Code and websites.</h1>
-                <h5 className="text-2xl  md:text-3xl  text-white dark:text-black font-sans font-light" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">A front-end developer and creator of <a href="http://knowtyone.netlify.app/" className="underline underline-offset-8     decoration-red-400  decoration-solid transition-all duration-200 hover:bg-red-400 hover:text-white tracking-tight" target="_blank" rel="noreferrer">Knowty</a>, an educational page for tenth grade students. <br className="hidden md:block" /> I also like to delve into the psychology of people.   </h5>
+                <h5 className="text-2xl  md:text-3xl  text-white dark:text-black font-sans font-light" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">A front-end developer and creator of <a href="http://knowtyone.netlify.app/" className="underline underline-offset-8     decoration-red-400  decoration-solid transition-all duration-200 hover:bg-red-400 hover:text-white tracking-tight" target="_blank" rel="noreferrer">Knowty</a>, an educational page for tenth grade students. <br className="hidden md:block" /> I also like to help people and contribute to humanity.</h5>
             </div>
 
             <div className="pt-20 pb-10 md:pt-56 md:pb-20">
@@ -38,7 +37,7 @@ const Home = () => {
             <div className="pb-20 pt-12 px-4 md:pt-24 md:px-16">
                 <h1 className="text-5xl text-white dark:text-black font-serif pt-2 tracking-wide">Portfolio</h1>
                 <div className="flex flex-wrap justify-start mt-10 md:gap-x-5 gap-y-10">
-                    <PortfolioCard title="Knowty" img="knowty.png" description="An educational page for tenth grade students.  Created with the purpose of help students in their academic process." link="http://knowtyone.netlify.app/" technologies={
+                    <PortfolioCard title="Knowty" img="knowty.png" description="An educational page for tenth grade students.  Created with the purpose of help students in their academic process." link="https://knowty.colegiometropolitanodesoledad2000.edu.co/" technologies={
                         <>
                             <AiFillHtml5 size={20} className="text-white dark:text-[#495057]" />
                             <DiCss3 size={20} className="text-white dark:text-[#495057]" />
@@ -63,5 +62,3 @@ const Home = () => {
         </div>
     )
 }
-
-export default Home

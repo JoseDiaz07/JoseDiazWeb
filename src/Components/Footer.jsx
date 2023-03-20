@@ -2,7 +2,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { BsGithub } from "react-icons/bs";
 import { FaDev } from "react-icons/fa";
 
-const Footer = () => {
+export const Footer = () => {
 
   return (
     <footer className="text-center md:text-left border-t-2 border-gray-600 dark:border-gray-300">
@@ -22,5 +22,3 @@ const Footer = () => {
     </footer>
   )
 }
-
-export default Footer

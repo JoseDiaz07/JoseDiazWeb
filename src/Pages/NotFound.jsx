@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-const NotFound = () => {
+export const NotFound = () => {
     return (
         <div className="bg-[#121212] dark:bg-slate-100 transition-all duration-500">
             <div className="text-center h-screen text-white dark:text-black pt-28" data-aos="fade-up" data-aos-duration="600" data-aos-once="true">
@@ -10,5 +10,3 @@ const NotFound = () => {
         </div>
     )
 }
-
-export default NotFound

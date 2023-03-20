@@ -1,7 +1,7 @@
 import { RiInstagramFill } from "react-icons/ri";
 import { BsGithub } from "react-icons/bs";
 
-const About = () => {
+export const About = () => {
   return (
     <div className="px-1 bg-[#121212] transition-all duration-500 dark:bg-slate-100 min-h-screen">
       <div className="pt-6 px-4 md:pt-20 md:px-16">
@@ -32,5 +32,3 @@ const About = () => {
     </div >
   )
 }
-
-export default About
