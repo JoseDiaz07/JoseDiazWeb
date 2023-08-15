@@ -1,9 +1,9 @@
-import { RiInstagramFill } from "react-icons/ri";
-import { BsGithub } from "react-icons/bs";
+// import { RiInstagramFill } from "react-icons/ri";
+// import { BsGithub } from "react-icons/bs";
 
 export const About = () => {
   return (
-    <div className="px-1 bg-[#121212] transition-all duration-500 dark:bg-slate-100 min-h-screen">
+    <div className="px-1 bg-zinc-900 transition-all duration-500 dark:bg-slate-100 min-h-screen">
       <div className="pt-6 px-4 md:pt-20 md:px-16">
         <h1 className="text-white dark:text-black text-5xl my-10 md:text-7xl text-center font-serif" data-aos="zoom-in" data-aos-duration="800" data-aos-once="true">Who am I?</h1>
         <div className="flex-wrap md:flex md:flex-nowrap justify-evenly gap-5 mt-5 transition-all duration-500" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
@@ -15,7 +15,7 @@ export const About = () => {
 
             In my free time I like to learn new things, even if sometimes they are not related to technology.</p>
         </div>
-        <div className=" mt-16 md:mt-28 pb-6 w-[60%] md:mx-auto">
+        {/* <div className=" mt-16 md:mt-28 pb-6 w-[60%] md:mx-auto">
           <h1 className="text-white dark:text-black text-3xl my-6 md:text-5xl text-left font-serif">Social</h1>
           <div className="space-y-4">
             <div className="flex gap-2 md:gap-5">
@@ -27,7 +27,8 @@ export const About = () => {
               <a href="https://github.com/jeliasdiaz" className="text-red-400 hover:text-white underline decoration-red-400 underline-offset-8 hover:bg-red-400 text-xl transition-all duration-300" target="_blank" rel="noreferrer">Github</a>
             </div>
           </div>
-        </div>
+        </div> */}
+        
       </div>
     </div >
   )
