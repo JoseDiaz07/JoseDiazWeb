@@ -4,7 +4,7 @@
 @import "transition-style";
 
 .nav {
-  @apply relative hover:text-white dark:hover:text-black h-[2.2rem];
+  @apply relative hover: text-white dark:hover:text-black h-[2.2rem];
 }
 
 .nav::after {
@@ -16,11 +16,11 @@
 }
 
 html {
-    --tw-bg-opacity: 1;
-    background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
 
 .dark html {
   --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity)) !important;
 }
