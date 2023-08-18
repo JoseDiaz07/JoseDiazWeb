@@ -25,7 +25,7 @@ export const Home = () => {
             <div className="pt-20 pb-10 md:pt-56 md:pb-20">
                 <div className="mx-4 py-43 p-3 md:mx-auto  rounded-lg md:px-16 md:py-14  md:max-w-4xl bg-[#28292a] dark:bg-white dark:text-black dark:shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                     <h1 className="text-4xl md:text-6xl text-white dark:text-black text-center font-medium font-serif tracking-wider">Skills</h1>
-                    <p className="text-lg md:text-xl text-white dark:text-black text-center font-light mt-2 w-full md:w-[24em] mx-auto">I am currently proficient in these technologies. To add that I am learning React and  Tailwind CSS</p>
+                    <p className="text-lg md:text-xl text-white dark:text-black text-center font-light mt-2 w-full md:w-[24em] mx-auto">I am currently proficient in these technologies.</p>
 
                     <div className="flex gap-3 md:gap-20 justify-center mt-6 md:mt-4">
                         <Tooltip icon={<AiFillHtml5 size={36} className="text-white dark:text-[#495057] hover:text-gray-400 dark:hover:text-gray-500 transition-all duration-200" />} text="HTML" />

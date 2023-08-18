@@ -14,3 +14,12 @@
 .nav:hover::after {
   @apply w-[100%];
 }
+
+html {
+    --tw-bg-opacity: 1;
+    background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+}
+
+.dark html {
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
