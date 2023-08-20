@@ -7,7 +7,7 @@ import { IoLogoReact } from "react-icons/io5";
 import { FaBootstrap } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { ProjectCard } from "../Components/ProjectCard";
-import { happySpace, knowty } from "../data/projectTechnologies";
+import { happySpace, knowty, morseTranslator } from "../data/projectTechnologies";
 
 export const Home = () => {
     return (
@@ -47,6 +47,8 @@ export const Home = () => {
                     <ProjectCard {...knowty}/>
 
                     <ProjectCard {...happySpace}/>
+
+                    <ProjectCard {...morseTranslator}/>
                 </div>
             </div>
         </div>

@@ -40,7 +40,7 @@ export const Footer = () => {
     }
   };
   return (
-    <footer className="text-center md:text-left ">
+    <footer className="text-center md:text-left">
       <div className="text-white dark:text-black p-4 bg-zinc-900 dark:bg-slate-100 md:px-20 md:flex justify-between pb-10 md:pb-16">
         <div className="w-80 md:w-96 text-start">
           <div className="font-serif text-4xl font-semibold">
