@@ -25,7 +25,7 @@ html {
 }
 
 .shinyDark:hover {
-  background: radial-gradient(250px at calc(var(--x, 0) * 90%) calc(var(--y, 0) * 80%), rgba(239, 68, 68, 0.3), #28292a);
+  background: radial-gradient(350px at calc(var(--x, 0) * 90%) calc(var(--y, 0) * 80%), rgba(239, 68, 68, 0.3), #28292a);
   transition: all 0.3s;
 }
 
@@ -41,6 +41,6 @@ html {
 }
 
 .dark .shinyDark:hover {
-  background: radial-gradient(250px at calc(var(--x, 0) * 90%) calc(var(--y, 0) * 80%), rgba(252, 165, 165, 0.6), white);
+  background: radial-gradient(350px at calc(var(--x, 0) * 90%) calc(var(--y, 0) * 80%), rgba(252, 165, 165, 0.6), white);
   transition: all 0.3s;
 }

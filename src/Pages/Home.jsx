@@ -15,6 +15,7 @@ import {
 import { useEffect, useRef } from 'react'
 
 export const Home = () => {
+    
 	const skillsRef = useRef()
 
 	const mouseMoveEvent = (e) => {
