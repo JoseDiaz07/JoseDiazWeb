@@ -34,7 +34,7 @@ export const Navbar = () => {
 							<img
 								src='/img/me-min.jpg'
 								alt=''
-								className='rounded-full w-14 mr-3 h-14 object-cover scale-110'
+								className='rounded-full w-14 mr-3 h-14 object-cover object-right scale-110'
 							/>
 							<div>
 								<h1 className='font-semibold text-1xl duration-100'>
