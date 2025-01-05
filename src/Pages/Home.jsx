@@ -65,7 +65,7 @@ export const Home = () => {
 				>
 					A front-end developer and creator of{' '}
 					<a
-						href='https://knowty.colegiometropolitanodesoledad2000.edu.co/'
+						href='https://knowty.netlify.app/'
 						className='underline underline-offset-8     decoration-red-400  decoration-solid transition-all duration-200 hover:bg-red-400 hover:text-white tracking-tight'
 						target='_blank'
 						rel='noreferrer'

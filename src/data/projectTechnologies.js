@@ -3,7 +3,7 @@ export const knowty = {
     description: "An educational page for tenth grade students.  Created with the purpose of help students in their academic process.",
     technologies: ["HTML", "CSS", "Javascript", "React", "Bootstrap"],
     img: "knowty.png",
-    link: "https://knowty.colegiometropolitanodesoledad2000.edu.co/"
+    link: "https://knowty.netlify.app/"
 }
 
 export const happySpace = {
